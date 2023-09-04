@@ -1,13 +1,12 @@
-import { Dashboard } from "./components/Dashboard";
-import { Header } from "./components/Header";
-import { GlobalStyle } from "./styles/global";
 
-export function App() {
+
+function App() {
+
   return (
     <>
-      <Header />
-      <Dashboard />
-      <GlobalStyle />
+      <h1>React</h1>
     </>
-  );
+  )
 }
+
+export default App
