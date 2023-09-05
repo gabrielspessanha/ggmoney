@@ -1,7 +1,15 @@
+import { useEffect } from "react";
 import { Content } from "./styles";
+import { api } from "../../services/api";
 
 
 export function TransactionsTable(){
+    
+    useEffect( () => {
+        api.get('alunos')
+        .then(response => console.log(response.data))
+    }, [])
+
     return(
         <Content>
             <table>
