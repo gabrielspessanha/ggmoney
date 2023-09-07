@@ -1,43 +1,12 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "title": "Rocket league",
-      "value": 200,
-      "category": "Octane titanium white",
+      "title": "Curso",
+      "value": 230,
+      "category": "Curso de react",
       "type": "withdraw",
-      "date": "2023-02-23 09:30"
-    },
-    {
-      "id": 2,
-      "title": "Desenvolvimento de Website",
-      "value": 12000,
-      "category": "Desenvolvimento",
-      "type": "deposit",
-      "date": "2023-04-12 05:30"
-    },
-    {
-      "id": 3,
-      "title": "Aluguel",
-      "value": 600,
-      "category": "Casa",
-      "type": "withdraw",
-      "date": "2022-12-26 17:30"
-    },
-    {
-      "title": "Filme",
-      "value": 40,
-      "category": "Guardiões das Galaxia",
-      "type": "withdraw",
-      "id": 4,
-      "date": "2022-12-26 20:30"
-    },
-    {
-      "title": "jogo",
-      "value": 144,
-      "category": "red dead 2",
-      "type": "deposit",
-      "id": 5
+      "date": "07/09/2023",
+      "id": 1
     }
   ]
 }

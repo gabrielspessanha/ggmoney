@@ -26,7 +26,8 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
             title,
             value,
             category,
-            type
+            type,
+            date : new Intl.DateTimeFormat('pt-BR', {timeZone: 'UTC'}).format()
         };
 
         api({
