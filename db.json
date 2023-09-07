@@ -1,15 +1,11 @@
 {
-    "alunos": [
-        {
-            "id": 1,
-            "nome": "aluna A",
-            "nota": 8
-        },
-        {
-            "id": 2,
-            "nome": "aluno B",
-            "nota": 5.3
-        }
-    ]
+  "transactions": [
+    {
+      "title": "Rocket league",
+      "value": 200,
+      "category": "Octane titanium white",
+      "type": "withdraw",
+      "id": 1
+    }
+  ]
 }
-

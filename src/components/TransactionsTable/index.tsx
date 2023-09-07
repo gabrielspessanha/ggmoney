@@ -5,10 +5,10 @@ import { api } from "../../services/api";
 
 export function TransactionsTable(){
     
-    useEffect( () => {
-        api.get('alunos')
-        .then(response => console.log(response.data))
-    }, [])
+    //useEffect( () => {
+     //   api.get('alunos')
+     //   .then(response => console.log(response.data))
+    //}, [])
 
     return(
         <Content>

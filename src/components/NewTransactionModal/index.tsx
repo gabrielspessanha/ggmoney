@@ -5,11 +5,12 @@ import incomeImg from '../../assets/Entradas.svg';
 
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
 import { FormEvent, useState } from 'react';
+import { api } from '../../services/api';
 
 interface NewTransactionModalprops{
     isOpen: boolean;
     onRequestClose: () => void;
-    isactive: boolean;
+    isactive?: boolean;
 }
 
 export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModalprops){
@@ -21,13 +22,18 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
 
     function handleCreateNewTransaction(event: FormEvent){
         event.preventDefault();
-
-        console.log({
+        const data={
             title,
             value,
             category,
             type
-        })
+        };
+
+        api({
+            method: 'POST',
+            url: '/transactions',
+            data
+        }).then(onRequestClose)
     }
 
     return(
