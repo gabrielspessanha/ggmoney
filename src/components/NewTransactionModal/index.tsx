@@ -58,6 +58,7 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
         </button>
         
         <Container onSubmit={handleCreateNewTransaction}>
+            alert('Para ver sua nova transação precisa atualizar a página')
             <h2>Cadastrar Transação</h2>
             
             <input 
