@@ -1,6 +1,13 @@
 import { Content } from "./styles";
 import {  useTransactions } from "../../hooks/useTransaction";
 
+import closeButton  from '../../assets/close.svg';
+
+
+function handleCloseTable() {
+    console.log('teste')
+}
+
 export function TransactionsTable(){
     const {transactions}= useTransactions()
 
@@ -29,7 +36,18 @@ export function TransactionsTable(){
                                 <td>{transaction.category}</td>
                                 <td>{
                                     new Intl.DateTimeFormat('pt-BR', {timeZone: 'UTC'}).format()
-                                    }</td>
+                                    }
+                                </td>
+                                <td>
+                                <button 
+                                    type='button' 
+                                    onClick={handleCloseTable}
+                                    className='react-table-close'
+                                >
+                                    <img src={closeButton} alt='Fechar tabela' />
+                                                    
+                                </button>
+                                </td>
                             </tr>
                     ))}
                 </tbody>

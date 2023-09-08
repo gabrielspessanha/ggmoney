@@ -36,5 +36,24 @@ export const Container = styled.div`
             color: #FFF;
         }
     }
+@media (max-width: 770px){
+    gap: 1rem;
+    grid-template-columns:1fr;
+
+
+    div{
+        margin: 0 2rem;
+        padding: 1rem 1.4rem;
+
+
+        strong{
+            display: block;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 3rem;
+        }
+    }
+}
 
 `
