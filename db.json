@@ -7,6 +7,41 @@
       "type": "withdraw",
       "date": "07/09/2023",
       "id": 1
+    },
+    {
+      "title": "aedq2",
+      "value": 124,
+      "category": "dadaf",
+      "type": "deposit",
+      "id": 2
+    },
+    {
+      "title": "Batata",
+      "value": 1.5,
+      "category": "Loja",
+      "type": "withdraw",
+      "id": 3
+    },
+    {
+      "title": "aa",
+      "value": 2,
+      "category": "2",
+      "type": "withdraw",
+      "id": 4
+    },
+    {
+      "title": "dababaduuu",
+      "value": 12,
+      "category": "124",
+      "type": "withdraw",
+      "id": 5
+    },
+    {
+      "title": "Perai",
+      "value": 12,
+      "category": "Compras",
+      "type": "deposit",
+      "id": 6
     }
   ]
 }
