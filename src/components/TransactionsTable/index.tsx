@@ -4,12 +4,9 @@ import {  useTransactions } from "../../hooks/useTransaction";
 import closeButton  from '../../assets/close.svg';
 
 
-function handleCloseTable() {
-    console.log('teste')
-}
 
 export function TransactionsTable(){
-    const {transactions}= useTransactions()
+    const {transactions, removeTransaction }= useTransactions()
 
     return(
         <Content>
@@ -41,7 +38,7 @@ export function TransactionsTable(){
                                 <td>
                                 <button 
                                     type='button' 
-                                    onClick={handleCloseTable}
+                                    onClick={()=> removeTransaction(transaction.id)}
                                     className='react-table-close'
                                 >
                                     <img src={closeButton} alt='Fechar tabela' />
